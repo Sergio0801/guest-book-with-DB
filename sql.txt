@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS `antiflood` (
+  `id` int(1) unsigned NOT NULL AUTO_INCREMENT,
+  `ip` char(15) NOT NULL,
+  `timeLost` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+CREATE TABLE IF NOT EXISTS `blacklist` (
+  `id` int(1) unsigned NOT NULL AUTO_INCREMENT,
+  `ip` char(20) NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+CREATE TABLE IF NOT EXISTS `message` (
+  `id` int(1) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(10) NOT NULL,
+  `email` varchar(25) NOT NULL,
+  `topic` varchar(20) NOT NULL,
+  `message` varchar(1000) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;

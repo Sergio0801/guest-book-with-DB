@@ -1,0 +1,2 @@
+# guest-book
+A simple implementation of a guest book. There are two main pages. First one is a the form for adding notes into the guest book with a captcha and an anti flood filter. Other one is for viewing all notes with pagination. Used database. Create database in the file - sql.txt

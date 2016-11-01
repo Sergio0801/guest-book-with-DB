@@ -1,0 +1,10 @@
+input[type="submit"] {
+    border-radius: 5px;
+}
+
+.nav {
+    position: absolute;
+    bottom: 0px;
+    color: green;
+    font-size: 18pt;
+}
